@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    grid-template-rows: repeat(15, 30px);
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cell.start {
+    background-color: rgb(8, 186, 8);
+}
+
+.cell.end {
+    background-color: red;
+}
+
+.cell.path {
+    background-color: yellow;
+}
+
+.cell.blocked {
+    background-color: rgb(7, 201, 255);
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
